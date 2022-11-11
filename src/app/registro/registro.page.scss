@@ -1,3 +1,27 @@
 ion-button{
-  margin-top: 15px;
+  margin-top: 10px;
+  width: 70%;
+  --border-radius: 20px;
+}
+
+ion-button + ion-button {
+  margin-bottom: 20px;
+}
+
+ion-item{
+  border-radius: 20px;
+  border: 1px black solid; /** borda: espessura, cor e formato **/
+  width: 70%; /** largura dos campos **/
+  margin-top: 20px; /** margem **/
+}
+
+.container{
+  display: flex; /** organiza os elementos de uma página HTML de forma dinâmica **/
+  justify-content: center; /** justifica conteúdo no centro **/
+  flex-direction: column; /** reorganiza os elementos em coluna **/
+  align-items: center; /** coloca os itens do conteúdo no centro **/
+  background-color: #fff; /** cor branca no fundo **/
+  border-radius: 20px; /** arredonda as bordas **/
+  width: 90%; /** define a largura **/
+  margin: 130px auto; /** margem sentido horario **/
 }

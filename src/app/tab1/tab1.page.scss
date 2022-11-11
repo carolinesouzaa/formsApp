@@ -1,5 +1,26 @@
+.container{
+  position: absolute; /** posição estática **/
+  top: 0; /** posição relativa ao topo do container **/
+  left: 0; /** posição relativa a esquerda do container **/
+  width: 100%; /** largura **/
+  height: 100%; /** altura **/
+  background: url(../../assets/bg.jpg); /** picture do fundo **/
+  background-position: center; /** posição da picture **/
+  background-size: cover; /** tamanho da picture na pagina **/
+}
+
 .botoes {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: auto;
+  flex-direction: column;
+  margin: 325px auto;
+  ion-button{
+    --background: #ffffff;
+    --color: #000000;
+    --border-color: #ffffff;
+    --border-radius: 20px;
+    width: 70%;
+    margin: 8px auto;
+  }
 }
