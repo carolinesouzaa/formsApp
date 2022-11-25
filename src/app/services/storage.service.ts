@@ -1,5 +1,6 @@
 /* eslint-disable no-underscore-dangle */
 import { Injectable } from '@angular/core';
+import { Storage } from '@ionic/storage-angular';
 
 @Injectable({
   providedIn: 'root'
@@ -23,5 +24,17 @@ export class StorageService {
 
   public get(key: string) {
     this._storage?.get(key);
+  }
+
+  public remove(key: string) {
+    this._storage?.remove(key);
+  }
+
+  public getAll(){
+    const lista = [];
+    this._storage.forEach((value, key, index) => {
+      lista.push(value);
+    });
+    return lista;
   }
 }
